@@ -4,7 +4,7 @@ El tipo define que hiciste: fix/test/refactor/revert/build...
 
 El alcance proporciona informacion contextual: ¿Dónde aplicaste el cambio? ¿Dónde sucedeel error?
 
-El asunto debe medir menos de 50 caracteres y la descripción son cortas y al grano
+El asunto  descripción son cortas y al grano
 
 La descripción responde el "Por qué" y "Cómo" del cambio
 

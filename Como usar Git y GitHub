@@ -1,0 +1,58 @@
+COMO USAR GIT Y GITHUB
+
+Configuracion inicial: 
+
+git config --global user.name "Tu nombre"
+git config --global user.email "tu@email.com"
+
+Comandos Básicos de GIT:
+ 
+git init	 	#Inicia un repositorio Git en un directorio.
+git add <archivo>	#añade un fichero al área de preparación(staging).
+git add .		#Añade todos los cambios al staging.
+git commit -m "mensaje"	#Guarda los cambios con un mensaje descriptivo.
+git status		#Muestra el estado de los ficheros (modificados, en staging, etc.).
+git log			#Muestra el historial de commits.
+git remote -v		#Verificar los remote existentes.
+git remote set-url <repositorio> https://github.com/Tu-usuario/Tu-repo.git #Actualizar la URL del remoto.
+git remote remove <repositorio>	#Eliminar el remoto
+
+Trabajo con Ramas (Branches):
+
+git branch		#Lista todas las ramas.
+git branch <nombre>	#Crea una nueva rama.
+git checkout <nombre>	#Cambia a la rama especificada.
+git merge <nombre>	#Fusiona una rama con la rama actual.
+git branch -d <nombre>	#Elimina una rama.
+
+Trabajo con Github:
+
+Subir un repositorio local a GitHub
+Crea un repositorio nuevo en GitHub (sin README, .gitignore, etc.).
+Sigue las instrucciones para vincular tu repositorio local:
+git remote add origin https://github.com/tu-usuario/tu-repositorio.git
+git branch -M main
+git push -u origin main	#Crea un token o usa ssh en su defecto en vez de la contraseña de usuario.!
+
+Comandos clave:
+
+git clone <url>		#Descarga un repositorio remoto a tu máquina.
+git pull		#Actualiza tu repositorio local con cambios del remoto.
+git push		#Envía tus commits locales al repositorio remoto.
+
+Colaboración en GitHub:
+
+Fork: Copia un repositorio de otro usuario a tu cuenta.
+Pull Request (PR): Propone cambios al repositorio original (usado en proyectos open source).
+Issues: Reportar errores, sugerir mejoras, o discutir ideas.
+
+Escenarios comunes y soluciones:
+
+Deshacer cambios en un archivo:
+git checkout -- <archivo> (restaura el último commit).
+
+Corregir el mensaje de un commit:
+git commit --amend -m "Nuevo mensaje".
+
+Resolver conflictos de merge:
+Edita los archivos con conflictos, luego usa git add y git commit.

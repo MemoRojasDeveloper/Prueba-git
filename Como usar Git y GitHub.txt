@@ -13,9 +13,11 @@ git add .		#Añade todos los cambios al staging.
 git commit -m "mensaje"	#Guarda los cambios con un mensaje descriptivo (lea conventional commits.txt para saber como hacer un correcto mensaje).
 git status		#Muestra el estado de los ficheros (modificados, en staging, etc.).
 git log			#Muestra el historial de commits.
-git remote -v		#Verificar los remote existentes.
-git remote set-url <repositorio> https://github.com/Tu-usuario/Tu-repo.git #Actualizar la URL del remoto.
-git remote remove <repositorio>	#Eliminar el remoto
+git remote -v		#Ver a que repositorios apunta el repositorio local(muestra la URL del repositorio git).
+git remote set-url <repositorio> https://github.com/Tu-usuario/Tu-repo.git #Actualizar la URL a la que apunta el repo local del repositorio .
+git remote remove <repositorio>	#Eliminar el remoto.
+git show 		#Muestra información sobre cualquier objeto git.
+rev-parse		#Es una herramienta de plomeria de Git que permite ver a qué SHA-1 apunta una rama en especifico.
 
 Trabajo con Ramas (Branches):
 

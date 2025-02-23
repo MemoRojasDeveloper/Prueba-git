@@ -10,7 +10,7 @@ Comandos Básicos de GIT:
 git init	 	#Inicia un repositorio Git en un directorio.
 git add <archivo>	#añade un fichero al área de preparación(staging).
 git add .		#Añade todos los cambios al staging.
-git commit -m "mensaje"	#Guarda los cambios con un mensaje descriptivo.
+git commit -m "mensaje"	#Guarda los cambios con un mensaje descriptivo (lea conventional commits.txt para saber como hacer un correcto mensaje).
 git status		#Muestra el estado de los ficheros (modificados, en staging, etc.).
 git log			#Muestra el historial de commits.
 git remote -v		#Verificar los remote existentes.
@@ -30,9 +30,10 @@ Trabajo con Github:
 Subir un repositorio local a GitHub
 Crea un repositorio nuevo en GitHub (sin README, .gitignore, etc.).
 Sigue las instrucciones para vincular tu repositorio local:
-git remote add origin https://github.com/tu-usuario/tu-repositorio.git
-git branch -M main
-git push -u origin main	#Crea un token o usa ssh en su defecto en vez de la contraseña de usuario.!
+
+git remote add origin https://github.com/tu-usuario/tu-repositorio.git #Añade el repositorio remoto al que se va a subir los cambios (solo hacer una vez por repositorio)
+git branch -M main	#Modifica el nombre de la rama actual, en este caso de master a main
+git push -u origin main	#Sube los cambios hechos en local al repositorio remoto-(¡Crear un token o usa ssh en su defecto en vez de la contraseña de usuario para poder hacer el push al repositorio remoto.)!
 
 Comandos clave:
 
